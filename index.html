@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Tariffs 2025 Impact Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+</head>
+<body>
+    <header>
+        <h1>US Tariffs 2025: Impact on Global Trade</h1>
+        <p class="subtitle">Analyzing the effects of US tariffs on countries with limited digital infrastructure access</p>
+    </header>
+
+    <main>
+        <section class="visualization-section">
+            <h2>Tariff Impact by Country</h2>
+            <div class="chart-container">
+                <canvas id="tariff-impact-chart"></canvas>
+            </div>
+            <div class="explanation-box">
+                <h3>Understanding the Impact</h3>
+                <p>This bar chart shows the projected trade deficit impact of US tariffs on different countries. Countries marked in red have limited digital infrastructure access, making them more vulnerable to tariff changes. The height of each bar represents the trade deficit in millions of USD, showing which countries are most affected by the new tariff policies.</p>
+            </div>
+        </section>
+
+        <section class="visualization-section">
+            <h2>Trade Deficit vs. Digital Infrastructure Access</h2>
+            <div class="chart-container">
+                <canvas id="deficit-infrastructure-chart"></canvas>
+            </div>
+            <div class="explanation-box">
+                <h3>Digital Divide and Trade Impact</h3>
+                <p>This scatter plot reveals the correlation between digital infrastructure access and trade deficits. Each point represents a country, with the size indicating population. The position shows the relationship between digital access (x-axis) and trade deficit (y-axis). Countries in the lower right quadrant have better digital infrastructure and lower trade deficits, while those in the upper left face both digital limitations and higher trade deficits.</p>
+            </div>
+        </section>
+
+        <section class="visualization-section">
+            <h2>Tariff Impact on Employment</h2>
+            <div class="chart-container">
+                <canvas id="employment-impact-chart"></canvas>
+            </div>
+            <div class="explanation-box">
+                <h3>Employment Consequences</h3>
+                <p>This visualization estimates the potential job losses in export-dependent industries due to the new tariffs. The chart shows the percentage of jobs at risk in each country's export sector, with special emphasis on countries with limited digital infrastructure. The data suggests that countries with poor digital access may face more severe employment impacts due to their limited ability to adapt to changing trade conditions.</p>
+            </div>
+        </section>
+
+        <section class="visualization-section">
+            <h2>Top Affected Countries</h2>
+            <div class="chart-container">
+                <canvas id="top-affected-chart"></canvas>
+            </div>
+            <div class="explanation-box">
+                <h3>Most Vulnerable Nations</h3>
+                <p>This chart compares the alleged tariffs (in red) with the response tariffs (in blue) for the top 10 most affected countries. The height difference between the bars shows the tariff gap that these countries must overcome. Countries with limited digital infrastructure often face higher alleged tariffs and have fewer resources to implement effective response measures.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Data Sources: US Trade Data, World Bank Digital Infrastructure Index</p>
+        <p>Created for educational purposes</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
